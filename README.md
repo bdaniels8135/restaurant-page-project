@@ -1,1 +1,5 @@
-# restaurant-page-project
+# Restaurant Page Project
+
+This is an assignment from the [Odin Project](https://www.theodinproject.com/dashboard).
+
+[Here](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) is the project brief.
