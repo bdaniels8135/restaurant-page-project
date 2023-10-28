@@ -1,9 +1,11 @@
+import hcdBanner from './hcd-banner.jpg';
+
 const body = document.querySelector('body');
 
 // Make header with nav buttons
 const header = document.createElement('header');
 const banner = document.createElement('img');
-banner.src = './hcd-banner.jpg';
+banner.src = hcdBanner;
 const navUl = document.createElement('ul');
 const navBtnText = ['Home', 'Menu', 'Contact'];
 for (let text of navBtnText) {

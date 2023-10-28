@@ -49,6 +49,7 @@ header ul li {
     border: 2px solid white;
     background-color: var(--main-bg-color);
     box-shadow: .3rem .3rem .5rem grey;
+    cursor: pointer;
 }
 
 main {
