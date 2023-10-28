@@ -66,6 +66,10 @@ main {
     gap: 2rem 1rem;
 }
 
+main p {
+    text-wrap: nowrap;
+}
+
 main table td{
     padding: .25rem .5rem;
 }
