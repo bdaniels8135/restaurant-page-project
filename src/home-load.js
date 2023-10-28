@@ -3,7 +3,7 @@ export function loadHomeContent(container) {
 
     const blurbString = 'Come try our famous Chicken Pot Pie!';
     const addressString = '605 N 10th St. Millville, NJ';
-    const phoneNumber = '(856) 327-3230';
+    const phoneString = '(856) 327-3230';
     const grublink = 'https://www.grubhub.com/restaurant/holly-city-cold-cuts-605-n-10th-st-millville/5250272';
     const dashlink = 'https://www.doordash.com/store/holly-city-cold-cuts-&-deli-millville-24589146/';
     const hours = {
@@ -47,7 +47,7 @@ export function loadHomeContent(container) {
     phoneLabel.innerText = 'Phone';
     phoneContainer.appendChild(phoneLabel);
     const phone = document.createElement('p');
-    phone.innerHTML = phoneNumber;
+    phone.innerHTML = phoneString;
     phoneContainer.appendChild(phone);
     container.appendChild(phoneContainer);
 
