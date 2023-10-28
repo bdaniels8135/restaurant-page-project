@@ -1,10 +1,5 @@
-const main = document.querySelector('main');
-const homeBtn = document.getElementById('home-btn');
-
-const loadHomeContent = () => {
-    main.innerHTML = 'Displaying Home Content!';
+function loadHomeContent(container) {
+    container.innerHTML = 'Displaying Home Content!';
 };
 
-homeBtn.addEventListener('click', loadHomeContent);
-
-export {loadHomeContent}
+export {loadHomeContent};
