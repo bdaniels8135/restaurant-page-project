@@ -1,4 +1,4 @@
-import hcdBanner from './hcd-banner.jpg';
+import hcdBanner from './img/hcd-banner.jpg';
 
 (() => {
     const body = document.querySelector('body');

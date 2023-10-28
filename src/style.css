@@ -87,10 +87,13 @@ main h1 {
 
 main h2 {
     font-size: 1.25rem;
+    text-decoration: underline;
+    text-align: center;
 }
 
 main th {
     font-size: 1.25rem;
+    text-decoration: underline;
 }
 
 a {
@@ -99,6 +102,10 @@ a {
     border: 2px solid white;
     padding: .5rem 1rem;
     font-weight: 700;
+}
+
+main img {
+    width: 300px;
 }
 
 footer {
