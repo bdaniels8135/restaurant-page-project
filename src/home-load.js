@@ -23,12 +23,12 @@ export function loadHomeContent(container) {
 
     // Add Address
     const address = document.createElement('p');
-    address.innerHTML = `Address: ${addressString}`;
+    address.innerHTML = addressString;
     container.appendChild(address);
 
     // Add Phone
     const phone = document.createElement('p');
-    phone.innerHTML = `Phone: ${phoneNumber}`;
+    phone.innerHTML = phoneNumber;
     container.appendChild(phone);
 
     // Add Hours
