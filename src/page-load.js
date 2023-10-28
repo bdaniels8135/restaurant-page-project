@@ -23,13 +23,3 @@ body.appendChild(main);
 const footer = document.createElement('footer');
 footer.innerHTML = 'Copyright &copy; 2023 Holy City Deli & Cold Cuts';
 body.appendChild(footer)
-
-
-export const UI = {
-    body,
-    header,
-    navUl,
-    main,
-    footer,
-}
-
