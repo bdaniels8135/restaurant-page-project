@@ -37,14 +37,14 @@ header img {
 header ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
     padding: 1rem;
 }
 
 header ul li {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 750;
     padding: .25rem .5rem;
     border: 2px solid white;
     background-color: black;
@@ -59,12 +59,36 @@ header ul li {
 
 main {
     flex: 1;
-    padding: 1rem;
+    padding: 2rem 1rem;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main table td{
+    padding: .5rem 1rem;
 }
 
 main * {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
+}
+
+main iframe {
+    border: 5px solid var(--main-color);    
+}
+
+main h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    border: 2px solid white;
+    padding: .5rem 1rem;
+    font-weight: 700;
 }
 
 footer {

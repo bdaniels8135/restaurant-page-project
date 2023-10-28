@@ -30,5 +30,6 @@ import {loadContactContent} from './contact-load';
         loadContactContent(main)
     });
 
+    selectBtn(homeBtn);
     loadHomeContent(main);
 })();
