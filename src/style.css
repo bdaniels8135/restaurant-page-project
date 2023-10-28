@@ -66,6 +66,12 @@ main {
     gap: 2rem 1rem;
 }
 
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main p {
     text-wrap: nowrap;
 }
@@ -75,7 +81,16 @@ main table td{
 }
 
 main h1 {
+    font-size: 1.75rem;
     text-align: center;
+}
+
+main h2 {
+    font-size: 1.25rem;
+}
+
+main th {
+    font-size: 1.25rem;
 }
 
 a {

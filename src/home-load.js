@@ -21,37 +21,45 @@ export function loadHomeContent(container) {
     blurb.innerText = blurbString;
     container.appendChild(blurb);
 
-    // Add Address
-    const address = document.createElement('p');
-    address.innerHTML = addressString;
-    container.appendChild(address);
-
-    // Add Phone
-    const phone = document.createElement('p');
-    phone.innerHTML = phoneNumber;
-    container.appendChild(phone);
-
     // Add Hours
     const headerRow = document.createElement('tr');
-    const colHeadDays = document.createElement('th');
-    colHeadDays.innerText = 'Days';
-    headerRow.appendChild(colHeadDays);
-    const colHeadHours = document.createElement('th');
-    colHeadHours.innerText = 'Hours';
-    headerRow.appendChild(colHeadHours);
+    const headerCell = document.createElement('th');
+    headerCell.innerText = 'Hours of Operation';
+    headerCell.colSpan = 2;
+    headerRow.appendChild(headerCell);
     const hoursTable = document.createElement('table');
     hoursTable.appendChild(headerRow);
     container.appendChild(hoursTable);
     for (let day in hours) {
-        const newRow = document.createElement('tr');
-        const newDayCell = document.createElement('td');
-        newDayCell.innerText = day;
-        newRow.appendChild(newDayCell);
-        const newHoursCell = document.createElement('td');
-        newHoursCell.innerText = hours[day];
-        newRow.appendChild(newHoursCell);
-        hoursTable.appendChild(newRow);
+    const newRow = document.createElement('tr');
+    const newDayCell = document.createElement('td');
+    newDayCell.innerText = day;
+    newRow.appendChild(newDayCell);
+    const newHoursCell = document.createElement('td');
+    newHoursCell.innerText = hours[day];
+    newRow.appendChild(newHoursCell);
+    hoursTable.appendChild(newRow);
     };
+
+    // Add Phone
+    const phoneContainer = document.createElement('div');
+    const phoneLabel = document.createElement('h2');
+    phoneLabel.innerText = 'Phone';
+    phoneContainer.appendChild(phoneLabel);
+    const phone = document.createElement('p');
+    phone.innerHTML = phoneNumber;
+    phoneContainer.appendChild(phone);
+    container.appendChild(phoneContainer);
+
+    // Add Address
+    const addressContainer = document.createElement('div');
+    const addressLabel = document.createElement('h2');
+    addressLabel.innerText = 'Address';
+    addressContainer.appendChild(addressLabel);
+    const address = document.createElement('p');
+    address.innerHTML = addressString;
+    addressContainer.appendChild(address);
+    container.appendChild(addressContainer);
 
     // Add Google Map
     const map = document.createElement('iframe');
