@@ -25,6 +25,6 @@ import hcdBanner from './hcd-banner.jpg';
 
     // Make footer
     const footer = document.createElement('footer');
-    footer.innerHTML = 'Copyright &copy; 2023 Holy City Deli & Cold Cuts';
+    footer.innerHTML = 'Copyright &copy; 2023 Holy City Cold Cuts & Deli';
     body.appendChild(footer);
 })();

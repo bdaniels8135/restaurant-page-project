@@ -26,7 +26,7 @@ export function loadHomeContent(container) {
     address.innerHTML = `Address: ${addressString}`;
     container.appendChild(address);
 
-    // Add Order Info
+    // Add Phone
     const phone = document.createElement('p');
     phone.innerHTML = `Phone: ${phoneNumber}`;
     container.appendChild(phone);
