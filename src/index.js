@@ -10,9 +10,25 @@ import {loadContactContent} from './contact-load';
     const menuBtn = document.getElementById('menu-btn');
     const contactBtn = document.getElementById('contact-btn');
 
-    homeBtn.addEventListener('click', () => loadHomeContent(main));
-    menuBtn.addEventListener('click', () => loadMenuContent(main));
-    contactBtn.addEventListener('click', () => loadContactContent(main));
+    const selectBtn = (selectedBtn) => {
+        for (let btn of [homeBtn, menuBtn, contactBtn]) btn.classList.remove('selected');
+        selectedBtn.classList.add('selected');
+    };
+
+    homeBtn.addEventListener('click', (event) => {
+        selectBtn(event.currentTarget);
+        loadHomeContent(main);
+    });
+
+    menuBtn.addEventListener('click', (event) => {
+        selectBtn(event.currentTarget);
+        loadMenuContent(main)
+    });
+
+    contactBtn.addEventListener('click', (event) => {
+        selectBtn(event.currentTarget);
+        loadContactContent(main)
+    });
 
     loadHomeContent(main);
 })();

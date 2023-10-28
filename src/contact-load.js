@@ -1,5 +1,3 @@
-function loadContactContent(container) {
+export function loadContactContent(container) {
     container.innerHTML = 'Displaying Contact Content!';
 };
-
-export {loadContactContent};

@@ -44,12 +44,17 @@ header ul {
 
 header ul li {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: .25rem .5rem;
     border: 2px solid white;
-    background-color: var(--main-color);
-    box-shadow: .3rem .3rem .5rem grey;
+    background-color: black;
+    color: var(--main-color);
     cursor: pointer;
+}
+
+.selected {
+    background-color: var(--main-color);
+    color: black;
 }
 
 main {
