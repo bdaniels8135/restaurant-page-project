@@ -1,6 +1,70 @@
+@font-face {
+    font-family: 'deli-font';
+    src: url('./Glegoo-Regular.ttf');
+}
+
+:root {
+    --main-bg-color: rgb(140, 198, 62);
+}
+
 * {
     padding: 0;
     margin: 0;
-    border: 1px dashed red;
     box-sizing: border-box;
+    font-family: 'deli-font', serif;
+    /* border: 1px dashed red; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+header img {
+    width: 100vw;
+    max-width: 750px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header ul li {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: .25rem .5rem;
+    border: 2px solid white;
+    background-color: var(--main-bg-color);
+    box-shadow: .3rem .3rem .5rem grey;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+main * {
+    border: 1px dashed red;
+}
+
+footer {
+    text-align: center;
+    font-size: .5rem;
+    font-weight: 600;
+    padding: .5rem;
+    background-color: var(--main-bg-color);
+    border-top: 5px solid white;
 }

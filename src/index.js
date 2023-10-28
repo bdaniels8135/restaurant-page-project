@@ -1,4 +1,2 @@
 import './style.css';
-import './page-load'
-
-console.log('Hello!')
+import { UI } from './page-load.js';
